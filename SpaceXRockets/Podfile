@@ -1,0 +1,10 @@
+target 'SpaceXRockets' do
+  use_frameworks!
+
+  pod 'Alamofire', '5.2.2'
+
+  target 'SpaceXRocketsTests' do
+    inherit! :search_paths
+  end
+
+end
