@@ -15,4 +15,12 @@ extension DateFormatter {
         formatter.defaultDate = Date()
         return formatter
     }()
+    
+    /// A formatter of medium date style, eg. "Jan 24, 2021"
+    static let mediumDateFormatter: DateFormatter = {
+        var formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter
+    }()
 }
