@@ -1,5 +1,5 @@
 //
-//  RecketDetailsPageInfoView.swift
+//  RecketDetailsContentView.swift
 //  SpaceXRockets
 //
 //  Created by Andrew Bohaevskiy on 25.01.2021.
@@ -7,13 +7,16 @@
 
 import SwiftUI
 
-struct RecketDetailsPageInfoView: View {
-    let info: RecketDetailsPageInfo
+struct RecketDetailsContentView: View {
+    @ObservedObject var viewModel: RecketDetailsContentViewModel
     
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
                 image
+                    .cornerRadius(5)
+                    .padding(.top)
+                    .padding(.bottom)
                 
                 HStack {
                     rocketName
@@ -24,11 +27,11 @@ struct RecketDetailsPageInfoView: View {
 
                 Divider()
                 
-                InfoRow("First flight date", info.firstFlightDate)
-                InfoRow("Cost per launch", info.costPerLaunch)
-                InfoRow("Country", info.country)
-                InfoRow("Status", info.activeStatus.stringRepresentation, valueColor: statusColor)
-                InfoRow("Description", info.description)
+                InfoRow("First flight date", viewModel.firstFlightDate)
+                InfoRow("Cost per launch", viewModel.costPerLaunch)
+                InfoRow("Country", viewModel.country)
+                InfoRow("Status", viewModel.activeStatus.stringRepresentation, valueColor: statusColor)
+                InfoRow("Description", viewModel.description)
                 
                 wikipediaButton
                     .padding(.top, 20)
@@ -39,7 +42,7 @@ struct RecketDetailsPageInfoView: View {
     }
     
     var statusColor: Color {
-        switch info.activeStatus {
+        switch viewModel.activeStatus {
             case .active: return .green
             case .notActive: return .gray
         }
@@ -48,30 +51,36 @@ struct RecketDetailsPageInfoView: View {
     // MARK: - Views
     
     var image: some View {
-        Image("rocket")
-            .resizable()
-            .scaledToFit()
-            .cornerRadius(5)
-            .padding(.top)
-            .padding(.bottom)
+        if let uiImage = viewModel.image {
+            return Image(uiImage: uiImage)
+                .resizable()
+                .scaledToFit()
+                .eraseToAnyView()
+        } else {
+            return Rectangle()
+                .fill(Color.gray)
+                .frame(height: 180)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .eraseToAnyView()
+        }
     }
     
     var rocketName: some View {
-        Text(info.recketName)
+        Text(viewModel.recketName)
             .font(.system(size: 30))
             .fontWeight(.black)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     var rateBadge: some View {
-        Text(info.rateBadge)
+        Text(viewModel.rateBadge)
             .font(.system(size: 28))
             .frame(minWidth: 36, maxWidth: .infinity, alignment: .trailing)
     }
     
     var wikipediaButton: some View {
         Button(action: {
-            UIApplication.shared.open(info.wikipediaURL, options: [:])
+            UIApplication.shared.open(viewModel.wikipediaURL, options: [:])
         }, label: {
             Text("Open Wikipedia")
                 .font(.system(size: 20))
@@ -117,7 +126,7 @@ struct InfoRow: View {
 }
 
 
-struct RecketDetailsPageInfoView_Previews: PreviewProvider {
+struct RecketDetailsContentView_Previews: PreviewProvider {
     static var previews: some View {
         let description = "Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit."
         let response = RocketResponse(
@@ -132,7 +141,7 @@ struct RecketDetailsPageInfoView_Previews: PreviewProvider {
             country: "United States",
             description: description)
         
-        let info = RecketDetailsPageInfo(response)
-        RecketDetailsPageInfoView(info: info)
+        let viewModel = RecketDetailsContentViewModel(response)
+        RecketDetailsContentView(viewModel: viewModel)
     }
 }

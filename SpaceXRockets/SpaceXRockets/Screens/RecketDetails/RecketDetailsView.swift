@@ -19,11 +19,11 @@ struct RecketDetailsView: View {
     var pageContent: some View {
         switch viewModel.state {
             case .loading:
-                return AnyView(ActivityIndicator(isAnimating: true))
-            case .finished(let info):
-                return AnyView(RecketDetailsPageInfoView(info: info))
+                return ActivityIndicator(isAnimating: true).eraseToAnyView()
+            case .finished(let viewModel):
+                return RecketDetailsContentView(viewModel: viewModel).eraseToAnyView()
             case .error(let description):
-                return AnyView(Text("Error: ").fontWeight(.bold) + Text(description))
+                return (Text("Error: ").fontWeight(.bold) + Text(description)).eraseToAnyView()
         }
     }
 }

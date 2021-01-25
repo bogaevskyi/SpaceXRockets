@@ -10,7 +10,7 @@ import Foundation
 
 enum RecketDetailsViewState {
     case loading
-    case finished(info: RecketDetailsPageInfo)
+    case finished(viewModel: RecketDetailsContentViewModel)
     case error(description: String)
 }
 
@@ -33,7 +33,7 @@ final class RecketDetailsViewModel: ObservableObject {
                 guard case let .failure(error) = completion else { return }
                 self?.state = .error(description: error.localizedDescription)
             }, receiveValue: { [weak self] value in
-                self?.state = .finished(info: RecketDetailsPageInfo(value))
+                self?.state = .finished(viewModel: RecketDetailsContentViewModel(value))
             })
             .store(in: &cancellable)
     }
