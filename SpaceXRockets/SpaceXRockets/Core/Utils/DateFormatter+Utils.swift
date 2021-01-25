@@ -9,18 +9,18 @@ import Foundation
 
 extension DateFormatter {
     /// "yyyy-MM-dd"
-    static let rocketResponseDateFormatter: DateFormatter = {
+    static var rocketResponseDateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         formatter.defaultDate = Date()
         return formatter
-    }()
+    }
     
     /// A formatter of medium date style, eg. "Jan 24, 2021"
-    static let mediumDateFormatter: DateFormatter = {
-        var formatter = DateFormatter()
+    static var mediumDateFormatter: DateFormatter {
+        let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         return formatter
-    }()
+    }
 }

@@ -131,6 +131,7 @@ extension RocketsListView: UICollectionViewDataSource {
 
 extension RocketsListView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        coordinatorDelegate?.openRocketDetailPage()
+        let model = viewModel.items[indexPath.row]
+        coordinatorDelegate?.openRocketDetailPage(rocketId: model.rocketId, rocketName: model.name)
     }
 }

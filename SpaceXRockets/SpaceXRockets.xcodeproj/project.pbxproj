@@ -22,6 +22,10 @@
 		2D410D0425BD81A300AF06A1 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D410D0325BD81A300AF06A1 /* RequestRouter.swift */; };
 		2D410D0825BD81CA00AF06A1 /* RocketsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D410D0725BD81CA00AF06A1 /* RocketsRouter.swift */; };
 		2D410D0C25BD81E700AF06A1 /* RocketsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D410D0B25BD81E700AF06A1 /* RocketsService.swift */; };
+		2D7FE8D025BEBA6D00D09353 /* NumberFormatter+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8CF25BEBA6D00D09353 /* NumberFormatter+Utils.swift */; };
+		2D7FE8D525BEBAFF00D09353 /* RecketDetailsPageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8D425BEBAFF00D09353 /* RecketDetailsPageInfo.swift */; };
+		2D7FE8DA25BEBB3100D09353 /* RecketDetailsPageInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8D925BEBB3100D09353 /* RecketDetailsPageInfoView.swift */; };
+		2D7FE8E025BEBD6E00D09353 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8DF25BEBD6E00D09353 /* ActivityIndicator.swift */; };
 		2D8F26FA25BD86D400D233B8 /* RocketsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F26F925BD86D400D233B8 /* RocketsServiceTests.swift */; };
 		2D8F271425BD8F8D00D233B8 /* RocketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F271325BD8F8D00D233B8 /* RocketsListViewModel.swift */; };
 		2D8F271D25BD905900D233B8 /* RocketsListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F271C25BD905900D233B8 /* RocketsListItemViewModel.swift */; };
@@ -33,6 +37,9 @@
 		2DFA6E6525BDBEB6004475BD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E6425BDBEB6004475BD /* ApplicationCoordinator.swift */; };
 		2DFA6E6A25BDBEE3004475BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E6925BDBEE3004475BD /* Coordinator.swift */; };
 		2DFA6E6F25BDBFD0004475BD /* RocketsListViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E6E25BDBFD0004475BD /* RocketsListViewCoordinator.swift */; };
+		2DFA6E7525BE2131004475BD /* RecketDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E7425BE2131004475BD /* RecketDetailsView.swift */; };
+		2DFA6E7A25BE22D3004475BD /* RecketDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E7925BE22D3004475BD /* RecketDetailsViewModel.swift */; };
+		2DFA6E7F25BE23AB004475BD /* RateBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E7E25BE23AB004475BD /* RateBadge.swift */; };
 		2DFAFFDD25BC497F00D03CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAFFDC25BC497F00D03CC4 /* AppDelegate.swift */; };
 		2DFAFFDF25BC497F00D03CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAFFDE25BC497F00D03CC4 /* SceneDelegate.swift */; };
 		2DFAFFE725BC497F00D03CC4 /* SpaceXRockets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAFFE525BC497F00D03CC4 /* SpaceXRockets.xcdatamodeld */; };
@@ -74,6 +81,10 @@
 		2D410D0325BD81A300AF06A1 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		2D410D0725BD81CA00AF06A1 /* RocketsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsRouter.swift; sourceTree = "<group>"; };
 		2D410D0B25BD81E700AF06A1 /* RocketsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsService.swift; sourceTree = "<group>"; };
+		2D7FE8CF25BEBA6D00D09353 /* NumberFormatter+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Utils.swift"; sourceTree = "<group>"; };
+		2D7FE8D425BEBAFF00D09353 /* RecketDetailsPageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecketDetailsPageInfo.swift; sourceTree = "<group>"; };
+		2D7FE8D925BEBB3100D09353 /* RecketDetailsPageInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecketDetailsPageInfoView.swift; sourceTree = "<group>"; };
+		2D7FE8DF25BEBD6E00D09353 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		2D8F26EB25BD869700D233B8 /* SpaceXRocketsIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXRocketsIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8F26EF25BD869700D233B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8F26F925BD86D400D233B8 /* RocketsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsServiceTests.swift; sourceTree = "<group>"; };
@@ -87,6 +98,9 @@
 		2DFA6E6425BDBEB6004475BD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		2DFA6E6925BDBEE3004475BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2DFA6E6E25BDBFD0004475BD /* RocketsListViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListViewCoordinator.swift; sourceTree = "<group>"; };
+		2DFA6E7425BE2131004475BD /* RecketDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecketDetailsView.swift; sourceTree = "<group>"; };
+		2DFA6E7925BE22D3004475BD /* RecketDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecketDetailsViewModel.swift; sourceTree = "<group>"; };
+		2DFA6E7E25BE23AB004475BD /* RateBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateBadge.swift; sourceTree = "<group>"; };
 		2DFAFFD925BC497F00D03CC4 /* SpaceXRockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXRockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFAFFDC25BC497F00D03CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DFAFFDE25BC497F00D03CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +228,7 @@
 			children = (
 				2D362AA825BC82F7003FB657 /* DateFormatter+Utils.swift */,
 				2D8F273C25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift */,
+				2D7FE8CF25BEBA6D00D09353 /* NumberFormatter+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +241,14 @@
 				2D410D0325BD81A300AF06A1 /* RequestRouter.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		2D7FE8DE25BEBD6500D09353 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FE8DF25BEBD6E00D09353 /* ActivityIndicator.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		2D8F26EC25BD869700D233B8 /* SpaceXRocketsIntegrationTests */ = {
@@ -249,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				2D362A9D25BC80ED003FB657 /* SpaceXError.swift */,
+				2DFA6E7E25BE23AB004475BD /* RateBadge.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +280,7 @@
 		2D8F271125BD8F4500D233B8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2DFA6E7325BE210E004475BD /* RecketDetails */,
 				2D8F271225BD8F4B00D233B8 /* RocketsList */,
 			);
 			path = Screens;
@@ -284,6 +309,7 @@
 		2DFA001D25BC4D9F00D03CC4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2D7FE8DE25BEBD6500D09353 /* UI */,
 				2D8F271025BD8E2400D233B8 /* Models */,
 				2D410CF825BD814900AF06A1 /* Network */,
 				2D362AA725BC82E2003FB657 /* Utils */,
@@ -308,6 +334,17 @@
 				2DFA6E6E25BDBFD0004475BD /* RocketsListViewCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2DFA6E7325BE210E004475BD /* RecketDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA6E7425BE2131004475BD /* RecketDetailsView.swift */,
+				2DFA6E7925BE22D3004475BD /* RecketDetailsViewModel.swift */,
+				2D7FE8D425BEBAFF00D09353 /* RecketDetailsPageInfo.swift */,
+				2D7FE8D925BEBB3100D09353 /* RecketDetailsPageInfoView.swift */,
+			);
+			path = RecketDetails;
 			sourceTree = "<group>";
 		};
 		2DFAFFD025BC497F00D03CC4 = {
@@ -585,15 +622,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7FE8DA25BEBB3100D09353 /* RecketDetailsPageInfoView.swift in Sources */,
 				2D410CFA25BD816600AF06A1 /* NetworkService.swift in Sources */,
 				2D8F272825BD951400D233B8 /* RocketsListView.swift in Sources */,
 				2D362A7925BC64FD003FB657 /* RocketResponse.swift in Sources */,
+				2D7FE8E025BEBD6E00D09353 /* ActivityIndicator.swift in Sources */,
 				2D362A7325BC6425003FB657 /* RocketsListResponse.swift in Sources */,
 				2D8F273D25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift in Sources */,
 				2D362AA925BC82F7003FB657 /* DateFormatter+Utils.swift in Sources */,
 				2D410D0825BD81CA00AF06A1 /* RocketsRouter.swift in Sources */,
 				2D8F271D25BD905900D233B8 /* RocketsListItemViewModel.swift in Sources */,
 				2DFAFFE725BC497F00D03CC4 /* SpaceXRockets.xcdatamodeld in Sources */,
+				2DFA6E7F25BE23AB004475BD /* RateBadge.swift in Sources */,
 				2D8F271425BD8F8D00D233B8 /* RocketsListViewModel.swift in Sources */,
 				2D362A9E25BC80ED003FB657 /* SpaceXError.swift in Sources */,
 				2D410D0025BD818A00AF06A1 /* HttpClient.swift in Sources */,
@@ -602,8 +642,12 @@
 				2DFA6E6F25BDBFD0004475BD /* RocketsListViewCoordinator.swift in Sources */,
 				2DFA001A25BC4CFE00D03CC4 /* CoreDataService.swift in Sources */,
 				2D8F272D25BD9B4E00D233B8 /* RocketsListItemView.swift in Sources */,
+				2DFA6E7A25BE22D3004475BD /* RecketDetailsViewModel.swift in Sources */,
 				2DFA6E6525BDBEB6004475BD /* ApplicationCoordinator.swift in Sources */,
 				2DFAFFDD25BC497F00D03CC4 /* AppDelegate.swift in Sources */,
+				2D7FE8D525BEBAFF00D09353 /* RecketDetailsPageInfo.swift in Sources */,
+				2DFA6E7525BE2131004475BD /* RecketDetailsView.swift in Sources */,
+				2D7FE8D025BEBA6D00D09353 /* NumberFormatter+Utils.swift in Sources */,
 				2DFAFFDF25BC497F00D03CC4 /* SceneDelegate.swift in Sources */,
 				2D410D0C25BD81E700AF06A1 /* RocketsService.swift in Sources */,
 			);

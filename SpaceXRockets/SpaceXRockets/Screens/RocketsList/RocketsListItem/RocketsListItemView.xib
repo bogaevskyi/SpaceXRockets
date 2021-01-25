@@ -41,7 +41,7 @@
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🟢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-CJ-Dxc">
                         <rect key="frame" x="427" y="174.5" width="32" height="33.5"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>

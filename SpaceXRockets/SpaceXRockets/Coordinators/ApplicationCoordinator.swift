@@ -10,6 +10,7 @@ import UIKit
 final class ApplicationCoordinator: Coordinator {
     private let window: UIWindow
     private let networkService: NetworkService
+    private let rocketsService: RocketsNetworkService
     
     // Coordinators
     private var rocketsListViewCoordinator: RocketsListViewCoordinator?
@@ -17,6 +18,7 @@ final class ApplicationCoordinator: Coordinator {
     init(window: UIWindow, networkService: NetworkService) {
         self.window = window
         self.networkService = networkService
+        self.rocketsService = RocketsNetworkService(network: networkService)
     }
     
     // MARK: - Coordinator
@@ -24,9 +26,11 @@ final class ApplicationCoordinator: Coordinator {
     func start() {
         let rocketsListView = makeRocketsListView()
         let navigationController = UINavigationController(rootViewController: rocketsListView)
-        navigationController.navigationBar.prefersLargeTitles = true
         
-        rocketsListViewCoordinator = RocketsListViewCoordinator(rocketsListView: rocketsListView)
+        rocketsListViewCoordinator = RocketsListViewCoordinator(
+            rocketsListView: rocketsListView,
+            rocketsService: rocketsService)
+        
         rocketsListViewCoordinator?.start()
         
         window.rootViewController = navigationController
@@ -36,7 +40,6 @@ final class ApplicationCoordinator: Coordinator {
     // MARK: -
     
     private func makeRocketsListView() -> RocketsListView{
-        let rocketsService = RocketsNetworkService(network: networkService)
         let viewModel = RocketsListViewModel(rocketsService: rocketsService)
         return RocketsListView(viewModel: viewModel)
     }

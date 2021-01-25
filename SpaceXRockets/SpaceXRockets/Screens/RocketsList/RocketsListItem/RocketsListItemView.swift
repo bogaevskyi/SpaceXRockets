@@ -24,6 +24,6 @@ class RocketsListItemView: UICollectionViewCell {
         backgroundImage.image = UIImage(named: "rocket")
         titleLabel.text = viewModel.name
         dateLabel.text = viewModel.date
-        rateBadgeLabel.text = viewModel.rateBadge.stringRepresentation
+        rateBadgeLabel.text = viewModel.rateBadge
     }
 }
