@@ -28,6 +28,8 @@
 		2D7FE8E025BEBD6E00D09353 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8DF25BEBD6E00D09353 /* ActivityIndicator.swift */; };
 		2D7FE8E625BEC6B500D09353 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8E525BEC6B500D09353 /* ImageLoader.swift */; };
 		2D7FE8F125BEE0F200D09353 /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8F025BEE0F200D09353 /* View+Utils.swift */; };
+		2D7FE8FA25BEE6D300D09353 /* RocketsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8F925BEE6D300D09353 /* RocketsListViewModelTests.swift */; };
+		2D7FE90625BEE71400D09353 /* MockRocketsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE90525BEE71400D09353 /* MockRocketsService.swift */; };
 		2D8F26FA25BD86D400D233B8 /* RocketsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F26F925BD86D400D233B8 /* RocketsServiceTests.swift */; };
 		2D8F271425BD8F8D00D233B8 /* RocketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F271325BD8F8D00D233B8 /* RocketsListViewModel.swift */; };
 		2D8F271D25BD905900D233B8 /* RocketsListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F271C25BD905900D233B8 /* RocketsListItemViewModel.swift */; };
@@ -89,6 +91,8 @@
 		2D7FE8DF25BEBD6E00D09353 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		2D7FE8E525BEC6B500D09353 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		2D7FE8F025BEE0F200D09353 /* View+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Utils.swift"; sourceTree = "<group>"; };
+		2D7FE8F925BEE6D300D09353 /* RocketsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListViewModelTests.swift; sourceTree = "<group>"; };
+		2D7FE90525BEE71400D09353 /* MockRocketsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRocketsService.swift; sourceTree = "<group>"; };
 		2D8F26EB25BD869700D233B8 /* SpaceXRocketsIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXRocketsIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8F26EF25BD869700D233B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8F26F925BD86D400D233B8 /* RocketsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsServiceTests.swift; sourceTree = "<group>"; };
@@ -264,6 +268,22 @@
 			path = ImageLoader;
 			sourceTree = "<group>";
 		};
+		2D7FE8F825BEE6AE00D09353 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FE8F925BEE6D300D09353 /* RocketsListViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2D7FE90425BEE70700D09353 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FE90525BEE71400D09353 /* MockRocketsService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2D8F26EC25BD869700D233B8 /* SpaceXRocketsIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +421,8 @@
 		2DFAFFF525BC498100D03CC4 /* SpaceXRocketsTests */ = {
 			isa = PBXGroup;
 			children = (
+				2D7FE90425BEE70700D09353 /* Mocks */,
+				2D7FE8F825BEE6AE00D09353 /* ViewModels */,
 				2D362A9625BC7E31003FB657 /* Utils */,
 				2D362A7C25BC7569003FB657 /* Services */,
 				2D362A8525BC75B9003FB657 /* Resources */,
@@ -673,9 +695,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7FE8FA25BEE6D300D09353 /* RocketsListViewModelTests.swift in Sources */,
 				2D362A9325BC7616003FB657 /* RocketResponseTests.swift in Sources */,
 				2D362A9825BC7E5E003FB657 /* JSONUtils.swift in Sources */,
 				2D362A8025BC758F003FB657 /* RocketsListResponseTests.swift in Sources */,
+				2D7FE90625BEE71400D09353 /* MockRocketsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
