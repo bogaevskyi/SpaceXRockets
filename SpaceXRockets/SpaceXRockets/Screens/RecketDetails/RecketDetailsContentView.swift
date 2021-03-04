@@ -14,6 +14,7 @@ struct RecketDetailsContentView: View {
         ScrollView(showsIndicators: false) {
             VStack {
                 image
+                    .frame(height: 200)
                     .cornerRadius(5)
                     .padding(.top)
                     .padding(.bottom)
@@ -51,18 +52,20 @@ struct RecketDetailsContentView: View {
     // MARK: - Views
     
     var image: some View {
-        if let uiImage = viewModel.image {
-            return Image(uiImage: uiImage)
+        RemoteImage(url: viewModel.imageURL) {
+            imagePlaceholder
+        } image: {
+            Image(uiImage: $0)
                 .resizable()
-                .scaledToFit()
-                .eraseToAnyView()
-        } else {
-            return Rectangle()
-                .fill(Color.gray)
-                .frame(height: 180)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .scaledToFill()
                 .eraseToAnyView()
         }
+    }
+    
+    var imagePlaceholder: some View {
+        Rectangle()
+            .fill(Color.gray)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     var rocketName: some View {
@@ -79,18 +82,14 @@ struct RecketDetailsContentView: View {
     }
     
     var wikipediaButton: some View {
-        Button(action: {
-            UIApplication.shared.open(viewModel.wikipediaURL, options: [:])
-        }, label: {
-            Text("Open Wikipedia")
-                .font(.system(size: 20))
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .center)
-        })
-        .background(Color.blue)
-        .cornerRadius(12)
+        Button("Open Wikipedia", action: openWikipedia)
+            .buttonStyle(PrimaryButtonStyle())
+    }
+    
+    // MARK: - Actions
+    
+    private func openWikipedia() {
+        UIApplication.shared.open(viewModel.wikipediaURL, options: [:])
     }
 }
 
@@ -132,7 +131,7 @@ struct RecketDetailsContentView_Previews: PreviewProvider {
         let response = RocketResponse(
             rocketId: "falcon9",
             rocketName: "Falcon 9",
-            images: [],
+            coverImageURL: URL(string: "https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg")!,
             successRate: 97,
             firstFlightDate: Date(),
             isActive: true,

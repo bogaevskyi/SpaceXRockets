@@ -12,13 +12,13 @@ struct RocketsListItemViewModel {
     let name: String
     let date: String
     let rateBadge: String
-    let imageURL: URL?
+    let imageURL: URL
     
     init(_ dataModel: RocketsListItemResponse) {
         self.rocketId = dataModel.rocketId
         self.name = dataModel.rocketName
         self.date = DateFormatter.mediumDateFormatter.string(from: dataModel.firstFlightDate)
         self.rateBadge = RateBadge(successRate: dataModel.successRate).stringRepresentation
-        self.imageURL = dataModel.images.first
+        self.imageURL = dataModel.coverImageURL
     }
 }

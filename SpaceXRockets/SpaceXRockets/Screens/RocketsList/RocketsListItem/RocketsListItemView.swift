@@ -32,18 +32,7 @@ class RocketsListItemView: UICollectionViewCell {
         dateLabel.text = viewModel.date
         rateBadgeLabel.text = viewModel.rateBadge
         
-        if let url = viewModel.imageURL {
-            backgroundImage.setImage(url: url).store(in: &cancellable)
-        }
-    }
-}
-
-
-extension UIImageView {
-    func setImage(url: URL) -> AnyCancellable {
-        ImageLoader.shared.getImage(url: url)
-            .sink { [weak self] image in
-                self?.image = image
-            }
+        backgroundImage.setImage(url: viewModel.imageURL)
+            .store(in: &cancellable)
     }
 }

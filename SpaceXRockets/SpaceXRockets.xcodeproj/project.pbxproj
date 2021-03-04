@@ -22,6 +22,7 @@
 		2D410D0425BD81A300AF06A1 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D410D0325BD81A300AF06A1 /* RequestRouter.swift */; };
 		2D410D0825BD81CA00AF06A1 /* RocketsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D410D0725BD81CA00AF06A1 /* RocketsRouter.swift */; };
 		2D410D0C25BD81E700AF06A1 /* RocketsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D410D0B25BD81E700AF06A1 /* RocketsService.swift */; };
+		2D7EED7325D014F900689F40 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EED7225D014F900689F40 /* PrimaryButtonStyle.swift */; };
 		2D7FE8D025BEBA6D00D09353 /* NumberFormatter+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8CF25BEBA6D00D09353 /* NumberFormatter+Utils.swift */; };
 		2D7FE8D525BEBAFF00D09353 /* RecketDetailsContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8D425BEBAFF00D09353 /* RecketDetailsContentViewModel.swift */; };
 		2D7FE8DA25BEBB3100D09353 /* RecketDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8D925BEBB3100D09353 /* RecketDetailsContentView.swift */; };
@@ -30,6 +31,9 @@
 		2D7FE8F125BEE0F200D09353 /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8F025BEE0F200D09353 /* View+Utils.swift */; };
 		2D7FE8FA25BEE6D300D09353 /* RocketsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE8F925BEE6D300D09353 /* RocketsListViewModelTests.swift */; };
 		2D7FE90625BEE71400D09353 /* MockRocketsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE90525BEE71400D09353 /* MockRocketsService.swift */; };
+		2D7FE90E25C0809D00D09353 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE90D25C0809D00D09353 /* UIImageView+URL.swift */; };
+		2D7FE91325C0821000D09353 /* ImageLoadingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE91225C0821000D09353 /* ImageLoadingOperation.swift */; };
+		2D7FE91825C084F300D09353 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FE91725C084F300D09353 /* RemoteImage.swift */; };
 		2D8F26FA25BD86D400D233B8 /* RocketsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F26F925BD86D400D233B8 /* RocketsServiceTests.swift */; };
 		2D8F271425BD8F8D00D233B8 /* RocketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F271325BD8F8D00D233B8 /* RocketsListViewModel.swift */; };
 		2D8F271D25BD905900D233B8 /* RocketsListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F271C25BD905900D233B8 /* RocketsListItemViewModel.swift */; };
@@ -37,6 +41,7 @@
 		2D8F272D25BD9B4E00D233B8 /* RocketsListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F272C25BD9B4E00D233B8 /* RocketsListItemView.swift */; };
 		2D8F273225BDA82C00D233B8 /* RocketsListItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F273125BDA82C00D233B8 /* RocketsListItemView.xib */; };
 		2D8F273D25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F273C25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift */; };
+		2D8F4C5F25F0C52000026512 /* RequiredValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F4C5E25F0C52000026512 /* RequiredValue.swift */; };
 		2DFA001A25BC4CFE00D03CC4 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA001925BC4CFE00D03CC4 /* CoreDataService.swift */; };
 		2DFA6E6525BDBEB6004475BD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E6425BDBEB6004475BD /* ApplicationCoordinator.swift */; };
 		2DFA6E6A25BDBEE3004475BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA6E6925BDBEE3004475BD /* Coordinator.swift */; };
@@ -85,6 +90,7 @@
 		2D410D0325BD81A300AF06A1 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		2D410D0725BD81CA00AF06A1 /* RocketsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsRouter.swift; sourceTree = "<group>"; };
 		2D410D0B25BD81E700AF06A1 /* RocketsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsService.swift; sourceTree = "<group>"; };
+		2D7EED7225D014F900689F40 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		2D7FE8CF25BEBA6D00D09353 /* NumberFormatter+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Utils.swift"; sourceTree = "<group>"; };
 		2D7FE8D425BEBAFF00D09353 /* RecketDetailsContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecketDetailsContentViewModel.swift; sourceTree = "<group>"; };
 		2D7FE8D925BEBB3100D09353 /* RecketDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecketDetailsContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 		2D7FE8F025BEE0F200D09353 /* View+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Utils.swift"; sourceTree = "<group>"; };
 		2D7FE8F925BEE6D300D09353 /* RocketsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListViewModelTests.swift; sourceTree = "<group>"; };
 		2D7FE90525BEE71400D09353 /* MockRocketsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRocketsService.swift; sourceTree = "<group>"; };
+		2D7FE90D25C0809D00D09353 /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		2D7FE91225C0821000D09353 /* ImageLoadingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingOperation.swift; sourceTree = "<group>"; };
+		2D7FE91725C084F300D09353 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		2D8F26EB25BD869700D233B8 /* SpaceXRocketsIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXRocketsIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8F26EF25BD869700D233B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8F26F925BD86D400D233B8 /* RocketsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsServiceTests.swift; sourceTree = "<group>"; };
@@ -102,6 +111,7 @@
 		2D8F272C25BD9B4E00D233B8 /* RocketsListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListItemView.swift; sourceTree = "<group>"; };
 		2D8F273125BDA82C00D233B8 /* RocketsListItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RocketsListItemView.xib; sourceTree = "<group>"; };
 		2D8F273C25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		2D8F4C5E25F0C52000026512 /* RequiredValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredValue.swift; sourceTree = "<group>"; };
 		2DFA001925BC4CFE00D03CC4 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		2DFA6E6425BDBEB6004475BD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		2DFA6E6925BDBEE3004475BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -238,6 +248,7 @@
 				2D8F273C25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift */,
 				2D7FE8CF25BEBA6D00D09353 /* NumberFormatter+Utils.swift */,
 				2D7FE8F025BEE0F200D09353 /* View+Utils.swift */,
+				2D8F4C5E25F0C52000026512 /* RequiredValue.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -256,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				2D7FE8DF25BEBD6E00D09353 /* ActivityIndicator.swift */,
+				2D7EED7225D014F900689F40 /* PrimaryButtonStyle.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -263,7 +275,9 @@
 		2D7FE8E425BEC6A600D09353 /* ImageLoader */ = {
 			isa = PBXGroup;
 			children = (
+				2D7FE91D25C35BF600D09353 /* UI */,
 				2D7FE8E525BEC6B500D09353 /* ImageLoader.swift */,
+				2D7FE91225C0821000D09353 /* ImageLoadingOperation.swift */,
 			);
 			path = ImageLoader;
 			sourceTree = "<group>";
@@ -282,6 +296,15 @@
 				2D7FE90525BEE71400D09353 /* MockRocketsService.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2D7FE91D25C35BF600D09353 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FE90D25C0809D00D09353 /* UIImageView+URL.swift */,
+				2D7FE91725C084F300D09353 /* RemoteImage.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		2D8F26EC25BD869700D233B8 /* SpaceXRocketsIntegrationTests */ = {
@@ -663,16 +686,21 @@
 				2D8F272825BD951400D233B8 /* RocketsListView.swift in Sources */,
 				2D7FE8E625BEC6B500D09353 /* ImageLoader.swift in Sources */,
 				2D7FE8F125BEE0F200D09353 /* View+Utils.swift in Sources */,
+				2D7EED7325D014F900689F40 /* PrimaryButtonStyle.swift in Sources */,
 				2D362A7925BC64FD003FB657 /* RocketResponse.swift in Sources */,
 				2D7FE8E025BEBD6E00D09353 /* ActivityIndicator.swift in Sources */,
 				2D362A7325BC6425003FB657 /* RocketsListResponse.swift in Sources */,
+				2D7FE91325C0821000D09353 /* ImageLoadingOperation.swift in Sources */,
 				2D8F273D25BDAC0900D233B8 /* UICollectionViewCell+Extensions.swift in Sources */,
 				2D362AA925BC82F7003FB657 /* DateFormatter+Utils.swift in Sources */,
 				2D410D0825BD81CA00AF06A1 /* RocketsRouter.swift in Sources */,
 				2D8F271D25BD905900D233B8 /* RocketsListItemViewModel.swift in Sources */,
 				2DFAFFE725BC497F00D03CC4 /* SpaceXRockets.xcdatamodeld in Sources */,
 				2DFA6E7F25BE23AB004475BD /* RateBadge.swift in Sources */,
+				2D7FE91825C084F300D09353 /* RemoteImage.swift in Sources */,
+				2D8F4C5F25F0C52000026512 /* RequiredValue.swift in Sources */,
 				2D8F271425BD8F8D00D233B8 /* RocketsListViewModel.swift in Sources */,
+				2D7FE90E25C0809D00D09353 /* UIImageView+URL.swift in Sources */,
 				2D362A9E25BC80ED003FB657 /* SpaceXError.swift in Sources */,
 				2D410D0025BD818A00AF06A1 /* HttpClient.swift in Sources */,
 				2DFA6E6A25BDBEE3004475BD /* Coordinator.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 struct RocketsListItemResponse: Decodable {
     let rocketId: String
     let rocketName: String
-    let images: [URL]
+    let coverImageURL: URL
     let successRate: Int
     let firstFlightDate: Date
     
@@ -26,7 +26,8 @@ struct RocketsListItemResponse: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         rocketId = try container.decode(String.self, forKey: .rocketId)
         rocketName = try container.decode(String.self, forKey: .rocketName)
-        images = try container.decode([URL].self, forKey: .images)
+        let images = try container.decode([URL].self, forKey: .images)
+        coverImageURL = try RequiredValue.unwrap(images.first)
         successRate = try container.decode(Int.self, forKey: .successRate)
         
         let dateString = try container.decode(String.self, forKey: .firstFlightDate)

@@ -26,11 +26,8 @@ class RecketDetailsContentViewModel: ObservableObject {
         }
     }
     
-    @Published var image: UIImage?
-    private var cancellable = Set<AnyCancellable>()
-    
     let recketName: String
-    let imageURL: URL?
+    let imageURL: URL
     let firstFlightDate: String
     let costPerLaunch: String
     let activeStatus: ActiveStatus
@@ -41,7 +38,7 @@ class RecketDetailsContentViewModel: ObservableObject {
     
     init(_ dataModel: RocketResponse) {
         self.recketName = dataModel.rocketName
-        self.imageURL = dataModel.images.first
+        self.imageURL = dataModel.coverImageURL
         self.firstFlightDate = DateFormatter.mediumDateFormatter.string(from: dataModel.firstFlightDate)
         self.costPerLaunch = NumberFormatter.currencyFormatterUS.string(for: dataModel.costPerLaunch) ?? ""
         self.activeStatus = ActiveStatus(dataModel.isActive)
@@ -49,15 +46,5 @@ class RecketDetailsContentViewModel: ObservableObject {
         self.description = dataModel.description
         self.rateBadge = RateBadge(successRate: dataModel.successRate).stringRepresentation
         self.wikipediaURL = dataModel.wikipediaURL
-        
-        fetchImage()
-    }
-    
-    func fetchImage() {
-        guard let url = imageURL else { return }
-        
-        ImageLoader.shared.getImage(url: url)
-            .assign(to: \.image, on: self)
-            .store(in: &cancellable)
     }
 }
